@@ -17,21 +17,44 @@ class Program {
     //output the random month name
     Console.WriteLine("month is {0}", months[month-1]);
     RangeTest();
+    RoundTest();
+    TruncateTest();
   }
+  
   public static void RangeTest() {
     IEnumerable<int> squares = Enumerable.Range(1, 10).Select(x => x* x);
 
     foreach (int num in squares)
-    {
         Console.WriteLine(num);
-    }
 }
 
-}
+  public static void RoundTest()
+  {
+    float originalNumber1 = 1.23f;
+    float originalNumber2 = 3.15f;
+    float originalNumber3 = 1.9f;
 
-    
-      
-      
-      
+    float roundedNumber1 = (float)Math.Round(originalNumber1, 1);
+    float roundedNumber2 = (float)Math.Round(originalNumber2, 1);
+    float roundedNumber3 = (float)Math.Round(originalNumber3, 0);
 
-  
+    Console.WriteLine("roundNumber1 is " + roundedNumber1);
+    Console.WriteLine("roundNumber2 is " + roundedNumber2);
+    Console.WriteLine("roundNumber3 is " + roundedNumber3);                  
+
+  }
+
+  public static void TruncateTest()
+ {
+    decimal decimalNumber;
+
+    decimalNumber = 32.7865m;
+    //Displays 32 
+    Console.WriteLine(Math.Truncate(decimalNumber));
+
+    decimalNumber = -32.9012m;
+    //Display -32 
+    Console.WriteLine(Math.Truncate(decimalNumber));
+  }  
+      
+  }      

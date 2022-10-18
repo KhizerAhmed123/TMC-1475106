@@ -20,6 +20,7 @@ class Program {
     RoundTest();
     TruncateTest();
     GetLengthOfString("khizer");
+    GetCharOfString("khizer", 5);
   }
   
   public static void RangeTest() {
@@ -64,4 +65,12 @@ class Program {
    Console.WriteLine("{0} is {1} characters long", str, length);
    
  }     
+  public static void GetCharOfString(string str, int i) 
+  {
+    Char singleletter;
+
+    SingleLetter = str[i];
+    Console.WriteLetter("Character {0} of {1} is {2}",i,str,
+ SingleLetter);                       
+  }
   }      

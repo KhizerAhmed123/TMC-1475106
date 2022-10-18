@@ -21,3 +21,10 @@
 /home/runner/RandomMonthGenerator/obj/Debug/netcoreapp6.0/main.dll
 /home/runner/RandomMonthGenerator/obj/Debug/netcoreapp6.0/ref/main.dll
 /home/runner/RandomMonthGenerator/obj/Debug/netcoreapp6.0/main.pdb
+/home/runner/RandomMonthGenerator/bin/Debug/netcoreapp6.0/main
+/home/runner/RandomMonthGenerator/bin/Debug/netcoreapp6.0/main.deps.json
+/home/runner/RandomMonthGenerator/bin/Debug/netcoreapp6.0/main.runtimeconfig.json
+/home/runner/RandomMonthGenerator/bin/Debug/netcoreapp6.0/main.dll
+/home/runner/RandomMonthGenerator/bin/Debug/netcoreapp6.0/ref/main.dll
+/home/runner/RandomMonthGenerator/bin/Debug/netcoreapp6.0/main.pdb
+/home/runner/RandomMonthGenerator/obj/Debug/netcoreapp6.0/main.genruntimeconfig.cache

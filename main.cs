@@ -1,5 +1,6 @@
-using System.IO;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 class Program {
   static void Main () 
@@ -15,5 +16,22 @@ class Program {
 
     //output the random month name
     Console.WriteLine("month is {0}", months[month-1]);
+    RangeTest();
   }
+  public static void RangeTest() {
+    IEnumerable<int> squares = Enumerable.Range(1, 10).Select(x => x* x);
+
+    foreach (int num in squares)
+    {
+        Console.WriteLine(num);
+    }
 }
+
+}
+
+    
+      
+      
+      
+
+  

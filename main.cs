@@ -19,6 +19,7 @@ class Program {
     RangeTest();
     RoundTest();
     TruncateTest();
+    GetLengthOfString("khizer");
   }
   
   public static void RangeTest() {
@@ -56,5 +57,11 @@ class Program {
     //Display -32 
     Console.WriteLine(Math.Truncate(decimalNumber));
   }  
-      
+ public static void GetLengthOfString(string str) {
+   int length;
+
+   length = str.Length;
+   Console.WriteLine("{0} is {1} characters long", str, length);
+   
+ }     
   }      

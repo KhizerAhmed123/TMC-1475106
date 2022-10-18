@@ -21,6 +21,7 @@ class Program {
     TruncateTest();
     GetLengthOfString("khizer");
     GetCharOfString("khizer", 5);
+    ExtractSubString();
   }
   
   public static void RangeTest() {
@@ -58,7 +59,8 @@ class Program {
     //Display -32 
     Console.WriteLine(Math.Truncate(decimalNumber));
   }  
- public static void GetLengthOfString(string str) {
+ public static void GetLengthOfString(string str) 
+ {
    int length;
 
    length = str.Length;
@@ -67,10 +69,23 @@ class Program {
  }     
   public static void GetCharOfString(string str, int i) 
   {
-    Char singleletter;
+    Char singleLetter;
 
     SingleLetter = str[i];
     Console.WriteLetter("Character {0} of {1} is {2}",i,str,
- SingleLetter);                       
+ SingleLetter);  
   }
+
+  public static void ExtractSubString() 
+  {
+    string month = "January";
+    string subString;
+    int startPos = 3;
+    int howMany = 2;
+
+    subString = month.substring(startPos, howMany);
+    Console.WriteLine("substring is {0}", subString);
+  }
+  
+
   }      
